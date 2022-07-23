@@ -1,0 +1,6 @@
+$body-color: #f30;
+
+div {
+	color: $body-color;
+	font-size: 23px;
+}
