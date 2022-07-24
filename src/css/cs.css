@@ -1,6 +1,35 @@
-$body-color: #f30;
+@import './reset';
 
-div {
-	color: $body-color;
+$header-color: #f30;
+$footer-color: #f30;
+
+.header {
+	/*color: $header-color;*/
 	font-size: 23px;
+	display: flex;
+	text-align: center;
+	a {
+		flex: 1;
+		text-decoration: none;
+	}
+}
+.body {
+	height: 200px;
+	background: azure;
+	ul.user-list {
+		padding: 10px;
+		margin: 10px;
+		li {
+			list-style-type: none;
+			line-height: 30px;
+			display: flex;
+			span {
+				flex: 1;
+			}
+		}
+	}
+}
+.footer {
+	color: $footer-color;
+	font-size: 18px;
 }

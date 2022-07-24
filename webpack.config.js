@@ -54,13 +54,15 @@ export default {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: src + '/index.html'
+			template: src + '/index.html',
+			publicPath: '/'
 		}),
 		new MiniCssExtractPlugin()
 	],
 	devServer: {
 		static: dist,
 		host: 'localhost',
+		historyApiFallback: true,
 		port: 8090
 	}
 }
